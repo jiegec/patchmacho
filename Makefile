@@ -5,3 +5,6 @@ patchmacho: main.o
 
 %.o: %.cpp
 	$(CXX) -c $^ -o $@
+
+install: all
+	install -m 755 patchmacho $(PREFIX)/bin/patchmacho
