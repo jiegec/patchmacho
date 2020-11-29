@@ -7,4 +7,4 @@ patchmacho: main.o
 	$(CXX) -c $^ -o $@
 
 install: all
-	install -m 755 patchmacho $(PREFIX)/bin/patchmacho
+	install -m 755 patchmacho $(out)/bin/patchmacho
